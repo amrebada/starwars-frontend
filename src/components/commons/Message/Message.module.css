@@ -1,0 +1,11 @@
+.container {
+  width: 50%;
+  margin-left: 25%;
+  min-height: 50px;
+  padding: 20px;
+}
+
+.error {
+  color: white;
+  background: tomato;
+}
