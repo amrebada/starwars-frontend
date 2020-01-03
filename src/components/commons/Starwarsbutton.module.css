@@ -1,0 +1,69 @@
+.container {
+  width: 30%;
+  height: 100px;
+  position: relative;
+  box-shadow: 0 0 15px yellow;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.active {
+  position: absolute;
+  top: -20px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: #ffe81f;
+  border-radius: 10px;
+  font-size: 28px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.container:hover .active {
+  background: #fded63;
+  top: -15px;
+}
+.container:hover .active.active.clicked {
+  background: #fded63;
+  top: -5px;
+}
+
+.active.clicked {
+  background: #fded63;
+  top: -5px;
+  color: #c2ae00;
+}
+
+.shadow {
+  width: 100%;
+  height: 100%;
+  background: #c2ae00;
+  border-radius: 10px;
+}
+
+.star {
+  font-size: 40px;
+}
+
+@media (max-width: 900px) {
+  .active {
+    font-size: 18px;
+  }
+  .star {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .active {
+    font-size: 12px;
+  }
+  .star {
+    font-size: 10px;
+  }
+  .container {
+    height: 50px;
+  }
+}
