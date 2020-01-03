@@ -4,7 +4,7 @@ export const getCookie = cname => {
   const decodedCookie = decodeURIComponent(document.cookie);
   const ca = decodedCookie.split(";");
   for (let i = 0; i < ca.length; i++) {
-    const c = ca[i];
+    let c = ca[i];
     while (c.charAt(0) === " ") {
       c = c.substring(1);
     }

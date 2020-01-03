@@ -9,6 +9,7 @@ const Questions = props => {
   return (
     <div className={classes.container}>
       <StarwarsButton
+        style={{ width: "30%" }}
         toggle
         isOn={showQuestions}
         onClick={() => setShowQuestions(!showQuestions)}

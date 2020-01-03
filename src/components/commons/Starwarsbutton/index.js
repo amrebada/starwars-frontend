@@ -18,7 +18,7 @@ const StarwarsButton = props => {
     onClick();
   };
   return (
-    <div className={classes.container} onClick={clickable}>
+    <div style={props.style} className={classes.container} onClick={clickable}>
       <div
         className={
           clicked ? [classes.active, classes.clicked].join(" ") : classes.active
