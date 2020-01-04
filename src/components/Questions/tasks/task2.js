@@ -4,14 +4,14 @@ import { gql } from "apollo-boost";
 import { useQuery } from "@apollo/react-hooks";
 import authContext from "../../../states/store";
 import { BACKEND_URL } from "../../../constants";
-const TASK1 = gql`
+const TASK2Query = gql`
   {
     MostAppearedCharacter
   }
 `;
 
 const Task2 = props => {
-  const { loading, error, data } = useQuery(TASK1);
+  const { loading, error, data } = useQuery(TASK2Query);
   const [state, dispatch] = useContext(authContext);
   const refreshToken = () => {
     fetch(`${BACKEND_URL}/token`, {
