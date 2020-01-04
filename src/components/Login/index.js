@@ -11,7 +11,7 @@ import authContext from "../../states/store";
 const Login = props => {
   const [message, setMessage] = useState([]);
   const [loading, setLoading] = useState(false);
-  const [state, dispatch] = useContext(authContext);
+  const [_, dispatch] = useContext(authContext);
 
   const loginEmail = createRef();
   const loginPassword = createRef();

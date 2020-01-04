@@ -5,7 +5,6 @@ import Tasks from "./tasks";
 
 const Questions = props => {
   const [showQuestions, setShowQuestions] = useState(false);
-  console.log(showQuestions);
 
   return (
     <div className={classes.container}>
