@@ -1,12 +1,13 @@
 import React from "react";
 
-import classes from "./tasks.module.css";
 import Task1 from "./task1";
+import Task2 from "./task2";
 
 const Tasks = props => {
   return (
     <>
       <Task1 />
+      <Task2 />
     </>
   );
 };
