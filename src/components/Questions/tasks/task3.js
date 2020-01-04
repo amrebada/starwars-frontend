@@ -44,7 +44,7 @@ const Task3 = props => {
   return (
     <div className={classes.container}>
       <p className={classes.question}>
-        What character (person) appeared in most of the Star Wars films?
+        What species appeared in the most number of Star Wars films?
       </p>
       {loading && <p className={classes.answer}>Loading ...</p>}
       {error && <p className={classes.bad}>error ...{refreshToken()}</p>}
