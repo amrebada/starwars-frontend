@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import classes from "./questions.module.css";
 import StarwarsButton from "../commons/Starwarsbutton";
+import Tasks from "./tasks";
 
 const Questions = props => {
   const [showQuestions, setShowQuestions] = useState(false);
@@ -16,6 +17,7 @@ const Questions = props => {
       >
         Do. Or do not. There is no try.
       </StarwarsButton>
+      {showQuestions && <Tasks />}
     </div>
   );
 };

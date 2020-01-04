@@ -1,0 +1,16 @@
+.question {
+  color: white;
+}
+.answer {
+  color: #ffe81f;
+}
+p {
+  font-size: 28px;
+  font-weight: bolder;
+}
+.container {
+  margin-top: 40px;
+}
+.bad {
+  color: tomato;
+}

@@ -9,10 +9,12 @@ export const getCookie = cname => {
       c = c.substring(1);
     }
     if (c.indexOf(name) === 0) {
-      return c.substring(name.length, c.length);
+      const cookie = c.substring(name.length, c.length);
+
+      return cookie === "null" ? null : cookie;
     }
   }
-  return "";
+  return null;
 };
 
 export const setCookie = (name, value, exdays) => {
