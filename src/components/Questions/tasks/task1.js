@@ -4,14 +4,14 @@ import { gql } from "apollo-boost";
 import { useQuery } from "@apollo/react-hooks";
 import authContext from "../../../states/store";
 import { BACKEND_URL } from "../../../constants";
-const TASK1 = gql`
+const TASK1Query = gql`
   {
     longestOpeningCredits
   }
 `;
 
-const Question = props => {
-  const { loading, error, data } = useQuery(TASK1);
+const Task1 = props => {
+  const { loading, error, data } = useQuery(TASK1Query);
   const [state, dispatch] = useContext(authContext);
   const refreshToken = () => {
     fetch(`${BACKEND_URL}/token`, {
@@ -47,4 +47,4 @@ const Question = props => {
   );
 };
 
-export default Question;
+export default Task1;
